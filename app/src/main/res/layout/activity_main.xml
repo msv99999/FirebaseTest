@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/LightGoldenrodYellow"
+    android:gravity="center_horizontal"
+    tools:context="com.example.macbookpro.firebasetest.MainActivity">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Lets test Firebase"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:id="@+id/tv"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/tv1"
+            android:paddingEnd="80dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv1"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/et1"
+            android:layout_alignBaseline="@id/tv1"
+            android:hint="First name only"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="Favourite Movie:"
+            android:id="@+id/tv2"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv2"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/et1"
+            android:layout_alignStart="@id/et1"
+            android:layout_alignBaseline="@id/tv2"
+            android:id="@+id/et2"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="Favourite Food:"
+            android:id="@+id/tv3"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv3"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/et2"
+            android:layout_alignStart="@id/et2"
+            android:layout_alignBaseline="@id/tv3"
+            android:id="@+id/et3"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv3"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:text="Hobby:"
+            android:id="@+id/tv4"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv4"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/et3"
+            android:layout_alignStart="@id/et3"
+            android:layout_alignBaseline="@id/tv4"
+            android:id="@+id/et4"
+            android:maxLines="1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et4"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background"
+            android:text="Submit"
+            android:id="@+id/submit"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submit"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/background"
+            android:text="Clear"
+            android:id="@+id/clear"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
